@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+char palabra[20];
+int vocales[5];
+
+int main(){
+    
+    printf("Ingrese 20 caracteres: ");
+    scanf("%s",&palabra);
+    
+    for(int x = 0; x < 20; x++){
+        
+        char c = palabra[x];
+        
+        switch(c){//Es como un if pero con muchas mas opciones.
+            //'case' es como decir caso.
+            case 'a': vocales[0]++;break;//'break' es para que la funcion termine 
+            case 'e': vocales[1]++;break;//al momento de leer la linea de codigo.
+            case 'i': vocales[2]++;break;
+            case 'o': vocales[3]++;break;//'' es donde va el valor sibolico que queremos que
+            case 'u': vocales[4]++;break;//pongan para que se ejecute determinada acción.
+            default: printf("Número no correspondiente.");break;
+            /*
+            'default' es para decir lo que pasa cuando se ingresa un 
+            valor que no este dentro de los parametros correspondientes.
+            */
+        }
+    }
+    
+    printf("--------CANTIDADES--------\n\n");
+    printf("a: %d\ne: %d\ni: %d\no: %d\nu: %d\n", vocales[0],vocales[1],vocales[2],vocales[3],vocales[4]);
+    
+    return 0;
+}

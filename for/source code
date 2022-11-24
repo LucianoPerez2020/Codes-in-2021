@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int a;
+int C1;
+int C2;
+
+int main(){
+    
+    printf("Ingrese 10 números: ");
+    
+    for (a = 0; a <= 10; a++){
+    /*
+     'a' vale 0 y hasta que 'a' no sea mayor que 10, al valor 
+     de 'a' se le va  a sumar 1 por cada siclo del odigo.
+   */
+   scanf("%i",&a);
+       
+     if (a >= 0){
+            C1 = C1 + 1;
+        }
+        
+     else{
+            C2 = C2 + 1;
+        }
+    }
+    
+    printf("Números positivos: %i \n" ,C1);
+    printf("Números negativos: %i" ,C2);
+    
+    return 0;
+}

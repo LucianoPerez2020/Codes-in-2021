@@ -1,0 +1,21 @@
+//Comprobar a travez de un programa si un alumno aprobó o no un examen.
+
+#include <stdio.h>
+
+float examen;
+
+int main(){
+    
+    examen = 0;
+    
+    printf("Ingrese su nota de examen: ");
+    scanf("%f",&examen);
+    
+    if(examen >= 7)
+    printf("\nExamen aprobado.");
+    
+    else
+    printf("\nExamen desaprobado.");
+    
+    return 0;
+}
